@@ -1,0 +1,22 @@
+[project]
+name = "teabreak-cli"
+version = "0.1.0"
+description = "A joyful CLI to remind developers to take breaks."
+authors = [
+  { name = "HotFixPanda" }
+]
+readme = "README.md"
+license = { text = "MIT" }
+keywords = ["cli", "wellness", "productivity", "break", "panda"]
+requires-python = ">=3.8"
+dependencies = [
+  "rich",
+  "plyer"
+]
+
+[project.scripts]
+teabreak = "teabreak.cli:main"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
